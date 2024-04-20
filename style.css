@@ -1,0 +1,90 @@
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background: black;
+}
+.card{
+    background: linear-gradient(135deg, rgba(0, 212, 255, 1) 33%, rgba(112, 178, 213, 1) 56%);
+    max-width:470px;
+    width:100%;
+    margin:30px auto;
+    padding:30px;
+    border-radius: 30px;
+}
+.weather{
+    display:none;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+}
+.search input{
+    border:0px;
+    outline:0px;
+    padding:0px 12px;
+    border-radius: 50px;
+    flex:1;
+    height:40px;
+}
+.search button{
+    border-radius: 50px;
+    border:none;
+    outline:none;
+    padding:8px;
+    width:40px;
+    height:40px;
+    background: white;
+    cursor:pointer;
+}
+.search button img{
+    max-width:80%;
+}
+.weather{
+    text-align: center;
+}
+.weather-icon{
+    max-width: 180px;
+    width:100%;
+    margin:15px auto;
+
+}
+.temperature,.city{
+    font-size:40px;
+    color:white;
+    line-height: 1;
+    margin:0px;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top:40px;
+}
+.detail .col{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+.detail .col img{
+    max-width:40px;
+    filter:invert();
+}
+.detail .col div p{
+    margin:0px;
+    text-align: left;
+    color:white;
+}
+.detail .col div .wind,.detail .col div .humidity{
+    font-size:24px;
+}
+.error{
+    color:red;
+    font-weight:bold;
+    display:none;
+    margin-top:15px;
+}
